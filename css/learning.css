@@ -1,0 +1,35 @@
+#learning_pack{
+    background: var(--sec-bg);
+    padding: 6rem;
+    gap: 4rem;
+}
+
+#learning_pack>div>div{
+    gap: 4rem;
+}
+
+#learning_pack figure img{
+    max-width: 50rem;
+    object-fit: contain;
+}
+
+#buyLearningPack{
+    margin-top: 4rem;
+    gap: 4rem;
+    padding: 0 6rem;
+}
+
+#buyLearningPack .imageSection {
+    width: 100%;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#buyLearningPack .imageSection h2 {
+    height: 20rem;
+}
+
+#buyLearningPack .imageSection h2>p{
+    font-size: 4rem;
+    font-weight: 400;
+}

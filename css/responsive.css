@@ -1,0 +1,780 @@
+/* * 1200 * */
+@media only screen and (max-width: 1200px) {
+    /** home css begin **/
+    #intervention{
+        padding: 0 4rem;
+    }
+
+    #journey{
+        gap: 10rem;
+    }
+
+    #journey #image_content{
+        grid-template-columns: 1fr;
+        grid-gap: 8rem;
+    }
+
+    #journey #image_content p{
+        text-align: center;
+    }
+
+    #support{
+        padding: 0 4rem;
+    }
+
+    #studyPlan::before,
+    #studyPlan::after{
+        left: -13rem;
+    }
+
+    #learningPack{
+        padding:4rem;
+    }
+
+    /* home css end */
+    /** About us css begin **/
+    #aboutUs::before{
+        top: 65rem;
+        right: -3rem;
+    }
+
+    /* About us css end */
+
+    #stories{
+        padding: 0;
+    }
+
+    #stories>div{
+        border-radius: 0;
+    }
+}
+
+
+/* * 1100 * */
+@media only screen and (max-width: 1100px) {
+    /** home css begin **/
+    #hero{
+        padding: 4rem;
+    }
+
+    #studyPlan::before,
+    #studyPlan::after {
+        left: -15rem;
+    }
+
+    #learningPack{
+        padding: 4rem 3rem;
+    }
+
+    #learningPack>div{
+        gap: 2rem;
+    }
+    /* home css end */
+
+    /** About us css begin **/
+    #aboutUs::before {
+        top: 73rem;
+        right: -4rem;
+    }
+
+    /* About us css end */
+
+  /** learning resources css begin **/
+    
+    #learning_pack figure img {
+        max-width: 45rem;
+    }
+    
+    /* learning resources css end */ 
+}
+
+
+/* * 1055 * */
+@media only screen and (max-width: 1055px) {
+
+    /** navigation css begin **/
+    .navbar>ul #navigation{
+        display: none;
+        background: linear-gradient(180deg, #000000 0%, rgba(8, 18, 71, 0.7) 100%);
+        flex-direction: column;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        bottom: 0;
+        width: 33rem;
+        height: auto;
+        right: -40rem;
+        align-items: start;
+        justify-content: start;
+        
+    }
+
+    .navbar>ul #navigation>li{
+        align-self: center;
+        justify-self: center;
+        width: 26.6rem;
+    }
+    
+    .navbar>ul .showNavigation{
+        animation: showNavbar 1s;
+    }
+
+    .navbar>ul .hideNavigation{
+        animation: hideNavbar 1s;
+    }
+
+    .navbar>ul .showNavigation,
+    .navbar>ul .hideNavigation{
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+
+    @keyframes showNavbar {
+        0%{
+            right: -40rem;
+        }
+        100%{
+            right: 0;
+        }
+    }
+
+    @keyframes hideNavbar {
+        0%{
+            right: 0rem;
+        }
+        100%{
+            right: -40rem;
+        }
+    }
+
+    .navbar>ul #navigation .verticalBar{
+        display: none;
+    }
+
+    .navbar>ul #navigation .links,
+    .navbar>ul #navigation .back{
+        font-size: 1.7rem;
+        color: var(--main-white);
+        border: .1rem solid var(--main-white);
+        border-radius: .5rem;
+        width: 26.6rem;
+        height: 4rem;
+        align-self: center;
+        justify-self: center;
+        padding: .8rem 2rem;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        transition: .3s all ease-in-out;
+    }
+
+  
+    .navbar>ul #navigation .links:hover,
+    .navbar>ul #navigation .active{
+        background: var(--main-white);
+        color: var(--main-dark);
+    }
+
+    .navbar>ul #navigation .back{
+        transition: .3s all;
+        margin: 4rem 0;
+        padding: 2rem;
+        justify-content: end;
+        border: none;
+        background: transparent;
+        width: 11rem;
+        cursor: pointer;
+    }
+
+    .navbar>ul #navigation .back svg {
+        transform: rotate(180deg);
+    }
+
+  
+
+    header .navbar{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    header .navbar>ul{
+        justify-content: space-between;
+        align-items: center;
+    }
+  
+    header .navbar>ul .hamburgerContainer {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* navigation css end */
+
+   /** home css begin **/
+    #hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #hero figure {
+        grid-area: none;
+    }
+       
+    #intervention {
+        padding: 0 3rem;
+    }
+    
+    #support div {
+        flex-direction: column-reverse;
+    }
+
+    #support>div #mainTextContainer{
+        align-items: center;
+    }
+    
+    #support>div #mainTextContainer p{
+        text-align: center;
+    }
+
+    #studyPlan{
+        padding: 0 3rem;
+    }
+
+    #studyPlan::before,
+    #studyPlan::after {
+        left: -20rem;
+    }
+
+    #studyPlan>div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #studyPlan>div #offerList{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 3rem;
+    }
+
+     #studyPlan>div #offerList h3{
+        font-size: 1.9rem;
+     }
+
+    #subjects{
+        padding: 0 3rem;
+    }
+
+    #subjects .subjectsContainer .subjectSection>div {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #subjects .subjectsContainer .subjectSection>div .h2_5,
+    #subjects .subjectsContainer .subjectSection>div .h2_6{
+        grid-area: initial;
+    }
+
+   
+
+    #learningPack>h1 {
+        display: block;
+        width: 100%;
+    }
+
+    #learningPack>div {
+        flex-direction: column;
+    }
+
+    #learningPack .imageSection h1{
+       max-width: 50rem;
+    }
+
+    #learningPack .textContentSection{
+      align-items: center;
+      text-align: center;
+    }
+
+   /* home css end */
+
+
+    /** About us css begin **/
+    #aboutUs::before {
+        top: 73rem;
+        right: -7rem;
+    }
+    #what_we_do .division_1{
+        flex-direction: column;
+        width: 100%;
+        align-items: start;
+    }
+
+    #what_we_do .division_1 .middle{
+        align-self: center;
+    }
+             
+    /* About us css end */
+
+    /** success stories css begin **/
+
+    #stories {
+        padding: 0;
+    }
+
+    #stories>div {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #stories>div figure{
+        display: none;
+    }
+
+    #stories .aboutStories{
+        gap: 2rem;
+    }
+
+    #stories .aboutStories h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* success stories css end */
+
+
+    /** learning resources css begin **/
+    #learning_pack{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+    }
+
+    .learnings>h2{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .textContentSection>h2{
+        display: none;
+    }
+
+    #learning_pack>div,
+    #learning_pack>div>div{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #buyLearningPack .imageSection{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* learning resources css end */
+
+    /** contact us css begin **/
+
+    #contact figure {
+        display: none;
+    }
+
+    #contact {
+        padding: 0 3rem;
+        flex-direction: column;
+    }
+
+    #contact figure {
+        display: none;
+    }
+
+
+    #contact .form h2 {
+        text-align: center;
+    }
+
+    #contact .address {
+        text-align: center;
+    }
+
+    #contact .address .email {
+        height: auto;
+    }
+
+    #contact .address .socialMedia {
+        display: none;
+    }
+
+    #contact .address .socialMedia figure {
+        display: none;
+    }
+    /* contact us css end */
+}
+
+
+/* * 1020 * */
+@media only screen and (max-width: 1020px) {
+
+    /** Home css begin **/
+    #studyPlan::before,
+    #studyPlan::after {
+        left: -25rem;
+    }
+    /* Home css end */
+    /** About us css begin **/
+    #aboutUs::before {
+        top: 76rem;
+        right: -12rem;
+    }
+    /* About us css begin */
+}
+
+
+/* * 900 * */
+@media only screen and (max-width: 900px) {
+    /** Home css begin **/
+    #journey {
+       padding: 0 2rem;
+    }
+    /* Home css end */
+
+    /** About us css begin **/
+    #aboutUs::before {
+        top: 74rem;
+        right: -17rem;
+    }
+    /* About us css begin */
+}
+
+
+/* * 835 * */
+@media only screen and (max-width: 835px) {
+
+    /** home css begin **/
+    #hero {
+       padding: 3rem;
+       gap: 4rem;
+    }
+
+    #hero figure {
+        grid-area: none;
+    }
+
+    #intervention {
+        padding: 0 2rem;
+    }
+
+    #studyPlan::before,
+    #studyPlan::after {
+        left: -30rem;
+    }
+
+    #studyPlan>h1 {
+        padding-left: 4rem;
+        width: 85%;
+    }
+    
+    #learningPack{
+        padding: 4rem 3rem;
+    }
+
+    /* home css end */
+    /** About us css begin  **/
+    #aboutUs::before {
+        top: 74rem;
+        right: -10rem;
+    }
+
+    #aboutUs,
+    #what_we_do{
+        padding: 0 4rem;
+    }
+    #aboutUs .imageContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #aboutUs .imageContainer div:last-child {
+        flex-direction: row;
+        grid-area: 2/1/3/3;
+    }
+
+    #what_we_do .division_1 .middle figure img {
+        max-width: 30rem;
+    }
+    /* About us css end */
+    footer div nav ul div:first-child {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 2.8rem;
+        
+    }
+
+    footer div nav ul div:first-child li{
+        font-weight: bold;
+    }
+
+    footer div nav ul>div:last-child {
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    footer div nav ul div:nth-child(2) {
+       justify-content: center;
+    }
+}
+
+
+
+/* * 650 * */
+@media only screen and (max-width: 650px) {
+
+    /** Home css begin **/
+    #support div figure img {
+        max-width: 100%;
+    }
+
+    #studyPlan>div #offerList {
+        grid-gap: 1rem;
+    }
+
+    #studyPlan>div #offerList h3 {
+        font-size: 1.6rem;
+    }
+    /* Home css end */
+
+
+    /** About us css begin **/
+    #aboutUs::before {
+        top: 82rem;
+        right: -10rem;
+    }
+}
+
+
+/* * 630 * */
+@media only screen and (max-width: 630px) {
+    /** Home css begin **/
+    #hero .buttonSection {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #journey figure::after {
+        height: 90%;
+        width: 90%
+    }
+
+    #learningPack .imageSection h1 {
+        max-width: 45rem;
+    }
+
+    /* Home css end */
+    /** About us css begin **/
+    #aboutUs::before {
+        top: 85rem;
+        right: -10rem;
+    }
+    
+    /* About us css begin */
+
+    /** learning resources css begin **/
+
+    #buyLearningPack .imageSection {
+        grid-template-columns: 1fr;
+    }
+
+    /* learning resources css end */
+
+
+    /** success stories css begin **/
+
+    #stories .aboutStories #comments p {
+        font-size: 1.6rem;
+        line-height: 3.5rem;
+        padding: 2rem;
+    }
+
+
+    /* success stories css end */
+}
+
+
+/* * 600 * */
+@media only screen and (max-width: 600px) {
+ 
+    /** About us css begin **/
+    #aboutUs::before {
+        top: 95rem;
+        right: -15rem;
+    }
+}
+
+
+/* * 545 * */
+@media only screen and (max-width: 545px){
+    /** Home css begin **/
+    #support{
+        padding: 0 2rem;
+    }
+
+    #support .bottomRightRect::after {
+        right: -15rem;
+    }
+    #studyPlan>div figure img {
+        max-width: 100%;
+    }
+
+    #learningPack .imageSection h1 {
+        max-width: 40rem;
+    }
+    /* Home css end */
+
+    /** About us css begin **/
+    #aboutUs::before {
+        top: 100rem;
+        right: -1rem;
+    }
+
+    /** learning resources css begin **/
+    
+    #learning_pack figure img {
+        max-width: 40rem;
+    }
+    
+    /* learning resources css end */
+
+    /** success stories css begin **/
+    
+    #stories .aboutStories #comments{
+        padding-top: 3rem;
+        gap: 0;
+    }
+    #stories .aboutStories #comments p {
+        font-size: 1.3rem;
+        line-height: 3rem;
+        padding: 2rem;
+    }
+    
+    
+    /* success stories css end */
+
+    footer{
+        padding: 1.5rem;
+    }
+
+    footer div nav ul div:first-child {
+       width: 115%;
+    }
+}
+
+/* * 490 * */
+@media only screen and (max-width: 490px) {
+    html {
+        font-size: 55%;
+    }
+    /** Home css begin  **/
+        #hero .buttonSection {
+            gap: 3rem;
+            font-size: 2rem;
+            padding: .5rem;
+        }
+        #hero .buttonSection button{
+            padding:1rem 2rem;
+        }
+
+    /* Home css end  */
+}
+
+/* * 400 * */
+@media only screen and (max-width: 400px) {
+    html{
+        font-size: 50%;
+    }
+    .navbar>ul #navigation .back {
+        width: 16rem;
+    }
+
+    .navbar>ul #navigation .back svg {
+        max-width: 2rem;
+    }
+}
+
+
+/* * 370 * */
+@media only screen and (max-width: 370px) {
+    html{
+        font-size: 46%;
+    }
+    /** Home css begin  **/
+    #hero figure img{
+        max-width: 35rem;
+    }
+
+    #hero figure::before {
+        height: 28.5rem;
+        width: 28.5rem;
+        right: 2rem;
+    }
+
+    #hero .buttonSection button svg{
+        max-width: 2rem;
+    }
+
+    /* Home css end  */
+}
+
+
+/* * 315 * */
+@media only screen and (max-width: 315px) {
+    html{
+        font-size: 42%;
+    }
+
+    .navbar>ul #navigation .back {
+        width: 16rem;
+    }
+
+    .navbar>ul #navigation .back svg {
+       max-width: 1.8rem;
+    }
+
+    /** Home css begin  **/
+    #hero .buttonSection {
+        gap: 2rem;
+        font-size: 1.5rem;
+        padding: .2rem;
+        width: 100%;
+    }
+
+    #hero .buttonSection button {
+        padding: 1rem 1.5rem;
+    }
+
+    /* Home css end  */
+
+    /** learning resources css begin **/
+
+    #learning_pack figure img {
+        max-width: 32rem;
+    }
+
+    /* learning resources css end */
+
+    footer div nav .links figure img {
+        max-width: 4rem;
+    }
+}

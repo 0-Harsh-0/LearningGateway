@@ -1,0 +1,85 @@
+/* contact section css begin */
+
+#contact{
+    padding: 0 6rem;
+    gap: 9rem;
+}
+
+#contact figure img{
+    object-fit: contain;
+    max-width: 35rem;
+}
+
+.form{
+    gap: 4rem;
+    height: 100%;
+    width: 100%;
+}
+
+.form h2{
+    font-size: 5rem;
+    color: var(--main-dark);
+    font-weight: 400;
+}
+
+.form form{
+    gap: 5.6rem;
+}
+
+.form form .row{
+   gap: 2rem;
+}
+
+.form form .row label{
+    color: var(--main-dark);
+    font-size: 1.8rem;
+}
+
+.form form .row input,
+.form form .row textarea{
+    border: none;
+    outline: none;
+    border-bottom: .3rem solid var(--main-dark);
+    font-size: 1.8rem;
+}
+
+.form form .row textarea{
+    resize: none;
+    overflow: hidden;
+    line-height: 3rem;
+}
+
+.address{
+    gap: 4rem;
+}
+
+.address .email{
+    height: 20rem;
+}
+
+.address h4{
+    color: var(--main-dark);
+    font-size: 2.5rem;
+    font-family: 'inter';
+}
+
+.address p{
+    color: var(--main-dark);
+    font-size: 2rem;
+    font-family: 'inter';
+    margin-top: 1rem;
+}
+
+#contact .address .socialMedia{
+    gap: 4rem;
+    height: 20rem;
+}
+
+#contact .address .socialMedia figure img{
+    height: 3.5rem;
+    width: 3.5rem;
+    object-fit: contain;
+}
+
+
+/* contact section css end */

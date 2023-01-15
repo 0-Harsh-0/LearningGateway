@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <title>Contact Us</title>
+
+    <!-- css files begin -->
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <!-- css files end -->
+</head>
+
+<body>
+    <!-- navbar begin-->
+    <header class="header">
+
+    </header>
+    <!-- navbar end -->
+
+    <!-- main content begin -->
+    <main class="grid">
+        <!-- contact section begin -->
+        <section id="contact" class="flex justifyCenter alignCenter">
+            <figure>
+                <img src="../images/contactus/main.svg" alt="">
+            </figure>
+            <!-- contact form begin -->
+            <div class="form flex flex-column justifyCenter">
+                <h2 class="patrickHand">
+                    Contact Us
+                </h2>
+                <!-- form begin -->
+                <form action="" class="flex flex-column justifyCenter">
+                    <div class="row flex flex-column">
+                        <label for="fullName" class="inter">Full Name</label>
+                        <input type="text" name="fullName" id="fullName" minlength="4" maxlength="20" pattern="[a-zA-Z]+" title="Alphabets only" required>
+                    </div>
+                    <div class="row flex flex-column">
+                        <label for="email" class="inter">E-mail</label>
+                        <input type="email" name="email" id="email" required pattern="[a-z]+^@gmail.com$" title="example@gmail.com only gmail.com is acceptable">
+                    </div>
+                    <div class="row flex flex-column">
+                        <label for="message" class="inter">Message</label>
+                        <textarea name="message" id="" cols="30" rows="1" oninput="auto_grow(this)" maxlength="200"></textarea >
+                    </div>
+                    <input type="submit" value="submit" class="btn btn_2_2">
+                </form>
+                <!-- form end -->
+            </div>
+            <!-- contact form end -->
+
+            <!-- address begin -->
+            <div class="address flex flex-column justifyCenter">
+                <div class="email flex flex-column justifyEnd">
+                    <h4>Contact</h4>
+                    <p>email@gmail.com</p>
+                </div>
+                <div class="location">
+                    <h4>Based in</h4>
+                    <p>Los Angeles, California</p>
+                </div>
+                <div class="socialMedia flex justifyCenter alignEnd">
+                    <!-- facebook -->
+                    <a href="https://facebook.com" target="_blank" title="Facebook">
+                        <figure>
+                            <img src="../images/contactus/facebook.svg" alt="">
+                        </figure>
+                    </a>
+                    <!-- instagram -->
+                    <a href="https://instagram.com" target="_blank" title="Instagram">
+                        <figure >
+                            <img src="../images/contactus/insta.svg" alt="">
+                        </figure>
+                    </a>
+                    <!-- twitter -->
+                    <a href="https://twitter.com" target="_blank" title="Twitter">
+                        <figure>
+                            <img src="../images/contactus/twitter.svg" alt="">
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <!-- address end -->
+        </section>
+        <!-- contact section end -->
+    </main>
+    <!-- main content end -->
+
+    <!-- footer begin -->
+    <footer class="footer">
+
+    </footer>
+    <!-- footer end -->
+
+</body>
+<script src="../js/htmlGenerator.js"></script>
+<script src="../js/main.js"></script>
+<script>
+    function auto_grow(element) {
+            element.style.height = (element.scrollHeight) + "px";
+        }
+</script>
+
+</html>

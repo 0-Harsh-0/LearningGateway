@@ -1,0 +1,91 @@
+/* stories section css begin */
+
+#stories{
+    padding: 0 6rem;
+}
+
+#stories> div{
+    background: var(--main-dark);
+    border-radius: 1rem;
+    padding: 3rem;
+    gap: 3rem;
+}
+
+
+.aboutStories h2{
+    font-weight: 400;
+    color: var(--main-white);
+    font-size: 4rem;
+    width: 52rem;
+    line-height: 4rem;
+}
+
+.aboutStories .buttons{
+    gap: 2rem;
+}
+
+.aboutStories .buttons button{
+    background: var(--main-white);
+    border-radius: 50%;
+    height: 2.7rem;
+    width: 2.7rem;
+    border: none;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.aboutStories .buttons button:hover{
+    border-radius: 20%;
+}
+
+.aboutStories .buttons button:active{
+    border-radius: 35%;
+}
+
+.aboutStories .buttons button:first-child{
+  padding-left: .3rem;
+}
+
+.aboutStories .buttons button:last-child{
+  padding-right: .3rem;
+}
+
+.aboutStories .buttons button span{
+    height: 1rem;
+    width: 1rem;
+    border: .3rem solid var(--main-dark);
+}
+
+.aboutStories .buttons .leftBtn span{
+    border-top: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+
+.aboutStories .buttons .rightBtn span{
+    border-top: none;
+    border-left: none;
+    transform: rotate(-45deg);
+}
+
+.aboutStories #comments{
+    gap: 1rem;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #010932;
+    background: linear-gradient(180deg, #010932 0%, rgba(9, 31, 146, 0.4) 100%);
+    padding: 6rem ;
+    padding-bottom: 0;
+}
+
+.aboutStories #comments p{
+    color: var(--main-white);
+    font-size: 2rem;
+    line-height: 4.5rem;
+    padding: 4rem;
+}
+.aboutStories #comments p:first-child{
+    padding-bottom: 0;
+}
+/* stories section css end */

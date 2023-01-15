@@ -1,0 +1,575 @@
+/* hero section css begin */
+
+#hero{
+    height: 100%;
+    width: 100%;
+    background: url(../images/home/hero_background.svg)var(--ncc) ;
+    grid-template-columns: repeat(auto-fit);
+    color: var(--main-white);
+    font-weight: 600;
+    column-gap: 5rem;
+    grid-gap: 2rem;
+    padding: 6rem;
+    overflow: hidden;
+}
+
+#hero::before{
+    position: absolute;
+    content: "";
+    background: rgba(1,9,50,51%);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+#hero figure{
+    grid-area: 1 / 2 / 6 / 2;
+    position: relative;
+}
+
+.firstLayer{
+    z-index: 20;
+}
+
+#hero figure img {
+    max-width: 41.7rem;
+    object-fit: cover;
+    z-index: 24;
+}
+
+#hero figure::before{
+    position: absolute;
+    content: "";
+    height: 34rem;
+    width: 34rem;
+    border: 1rem solid rgba(120, 120, 120, 1);
+    border-radius: 3rem;
+    transform: rotate(15deg);
+    right: 2.4rem;
+    z-index: 23;
+}
+
+
+#hero h1{
+    grid-area: 2 / 1 / 2 / 1;
+    font-size: 4.4rem;
+    line-height: 6.7rem;
+}
+
+#hero p{
+    grid-area: 3 / 1 / 3 / 1;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+#hero .buttonSection {
+    grid-area: 4 / 1 / 4 / 1;
+    font-size: 2.2rem;
+    display: flex;
+    gap: 4rem;
+}
+
+/* hero section css end */
+
+
+/* intervention Section css begin */
+
+#intervention{   
+    width: 100%;
+    gap: 2rem;
+    padding: 0 5rem;
+}
+
+#intervention p{
+    margin-bottom: 1.5rem;
+}
+
+#intervention div{
+    gap: 1rem;
+    height: 100%;
+}
+
+#intervention figure{
+    height: 100%;
+}
+
+#intervention figure img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+#intervention figure:nth-child(2) img{
+   margin-top: 50%;
+}
+
+
+
+
+/* intervention Section css end */
+
+
+/* journey section css begin */
+
+#journey{
+    margin-top: 5rem;
+    height: 100%;
+    width: 100%;
+    gap: 5rem;
+    padding: 0 5rem;
+}
+
+#journey #image_content{
+    grid-template-columns: 4fr 3.35fr;
+   gap: 4rem;
+}
+
+#journey #content{
+    gap: 2.5rem;
+}
+
+#journey #content p{
+    text-align: start;
+}
+
+#journey #image_content>div:first-child{
+    width: 100%;
+    height: 100%;
+    padding: 5rem;
+}
+
+#journey figure{
+    position: relative;
+    text-align: center;
+}
+
+#journey figure img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+#journey figure::before,
+#journey figure::after {
+    content: "";
+    position: absolute;
+    border-radius: 1rem;
+}
+
+#journey figure::before{
+    height: 18rem;
+    width: 18rem;
+    background-color: rgba(255, 207, 207, 1);
+    z-index: -1;
+    right: -5rem;
+    top: -6rem;
+}
+
+#journey figure::after{
+    height: 30rem;
+    width: 53rem;
+    background-color: rgba(40, 152, 134, 1);
+    z-index: -2;
+    left: -6rem;
+    bottom: -4rem;
+}
+
+
+#journey figure #smallCircles{
+    background: transparent;
+    position: absolute;
+    left: -3.2rem;
+    bottom: -3rem;
+    z-index: -1;
+    width: 11.9rem;
+    height: 10rem;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+#journey figure #smallCircles .circle{
+    background: rgba(255, 255, 255, 0.8); 
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;  
+}
+
+/* journey section css end */
+
+/* support section css begin */
+
+#support{
+    margin-top: 6rem;
+    gap: 4rem;
+    padding: 0 8rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#support div{
+    gap: 5rem;
+}
+
+#support div figure img{
+    object-fit: cover;
+    max-width: 58rem;
+}
+
+#support div #mainTextContainer{
+    padding: 3rem 0;
+}
+
+#support div #mainTextContainer p{
+    text-align: start;
+    margin: 0;
+    padding: 0;
+    line-height: 3.5rem;
+}
+
+#support div #mainTextContainer .longDash{
+    justify-self: start;
+}
+
+
+#support .topRightRect::before,
+#support .topRightRect::after,
+#support .leftRect::before,
+#support .leftRect::after,
+#support .bottomRightRect::before,
+#support .bottomRightRect::after{
+    content: "";
+    position: absolute;
+}
+
+#support .topRightRect::before,
+#support .topRightRect::after,
+#support .bottomRightRect::before,
+#support .bottomRightRect::after{
+    transform: rotate(39.61deg);
+}
+
+#support .leftRect::before{
+    top: 24rem;
+    left: 1rem;
+    height: 15rem;
+    width: 3rem;
+    background: linear-gradient(180deg, #010932 0%, #97A6F7 36.98%, rgba(1, 9, 50, 0.43) 93.23%);
+    transform: rotate(-39.61deg);
+}
+
+#support .leftRect::after{
+    top: 42rem;
+    left: -4rem;
+    height: 15rem;
+    width: 10rem;
+    background: linear-gradient(180deg, #010932 0%, #97A6F7 36.98%, rgba(1, 9, 50, 0.43) 93.23%);
+    transform: rotate(-39.61deg);
+}
+
+
+#support div figure img{
+    z-index: 5;
+}
+
+#support .topRightRect::before {
+    top: 35rem;
+    right: 1.5rem;
+    height: 15rem;
+    width: 3rem;
+    background: linear-gradient(180deg, rgba(8, 18, 71, 0.7) 0%, #6A7BD2 39.58%, rgba(29, 55, 194, 0.7) 92.19%);
+    z-index: 1;
+}
+
+#support .topRightRect::after {
+    top: 20rem;
+    right: -8.1rem;
+    height: 15rem;
+    width: 13rem;
+    background: var(--main-dark);
+}
+
+#support .bottomRightRect::before {
+    top: 41.8rem;
+    right: -7.5rem;
+    height: 17rem;
+    width: 10rem;
+    border: 1rem solid rgba(120, 120, 120, 1);;
+}
+
+#support .bottomRightRect::after {
+    top: 44rem;
+    right: -9rem;
+    height: 25rem;
+    width: 15rem;
+    background: linear-gradient(180deg, rgba(1, 9, 50,.56) 0%, #010932 100%);
+    transform: matrix(-0.77, -0.64, -0.64, 0.77, 0, 0);
+}
+/* support section css end */
+
+/* study plan section begin */
+#studyPlan{
+    background: var(--sec-bg);
+    margin-top: 10rem;
+    padding: 0 6rem;
+    padding-bottom: 6.36rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#studyPlan>h1{
+    margin: 0 auto;
+    padding: 4rem 0;
+    width: 55rem;
+    text-align: start;
+}
+
+#studyPlan>div{
+    gap: 4rem;
+}
+
+#studyPlan>div figure img{
+  max-width: 50rem;
+  object-fit: cover;
+}
+
+
+#studyPlan::before{
+    content: "";
+    position: absolute;
+    width: 39rem;
+    height: 29rem;
+    background: var(--main-dark);
+    z-index: -1;
+    top: 0;
+    left: -8rem;
+}
+
+#studyPlan::after{
+    content: "";
+    position: absolute;
+    width: 39rem;
+    height: 100%;
+    background: rgba(8, 18, 71, 0.44);
+    z-index: -1;
+    bottom: 0;
+    left: -8rem;
+}
+
+
+#studyPlan>div>div>p{
+    text-align: start;
+    line-height: 3rem;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+
+#studyPlan #offerList li{
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+#studyPlan #offerList li h3{
+    font-family: 'inter';
+    font-size: 2.2rem;
+}
+
+#studyPlan #offerList li figure img{
+    max-width: 4rem;
+    object-fit: cover;
+}
+
+/* study plan section end */
+
+/* subjects section css begin */
+
+#subjects{
+    margin-top: 8rem;
+    padding: 0 6rem;
+}
+
+#subjects>h1{
+    margin-bottom: 3rem;
+}
+
+#subjects .subjectsContainer{
+    gap: 6rem;
+}
+
+#subjects .subjectsContainer .subjectSection{
+    border: 2px solid rgba(1, 9, 50, 0.4);
+    border-radius: 10px;
+}
+
+#subjects .subjectsContainer .subjectSection>div{
+    padding: 3rem 2rem;
+    grid-gap: 3rem;
+    width: 100%;
+}
+
+#subjects .subjectsContainer .subjectSection>div .h2_5{
+    grid-area: 2/2/2/3;
+}
+
+#subjects .subjectsContainer .subjectSection>div .h2_6{
+    grid-area: 2/3/2/4;
+}
+
+
+#subjects .subjectsContainer .subjectSection h1,
+#subjects .subjectsContainer .subjectSection h2{
+    background: var(--main-dark);
+    width: 100%;
+}
+
+#subjects .subjectsContainer .subjectSection h1{
+    height: 26rem;
+    background: url(../images/home/subjects.svg)var(--ncc);
+    border-radius: 1rem;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+#subjects .subjectsContainer .subjectSection h1>p{
+    color: var(--main-white);
+    position: relative;
+    z-index: 2;
+    font-size: 11rem;
+}
+
+#subjects .subjectsContainer .subjectSection h2 {
+    height: 17rem;
+    border-radius: 1rem;
+}
+
+#subjects .subjectsContainer .subjectSection .english,
+#subjects .subjectsContainer .subjectSection .engLiter,
+#subjects .subjectsContainer .subjectSection .vr,
+#subjects .subjectsContainer .subjectSection .nvr {
+    background: url(../images/home/english_vr_nvr.svg)var(--ncc);
+}
+
+#subjects .subjectsContainer .subjectSection .math {
+    background: url(../images/home/maths.svg)var(--ncc);
+}
+
+#subjects .subjectsContainer .subjectSection .engLang {
+    background: url(../images/home/englishLang.svg)var(--ncc);
+}
+
+#subjects .subjectsContainer .subjectSection .science {
+    background: url(../images/home/science.svg)var(--ncc);
+}
+
+#subjects .subjectsContainer .subjectSection .h2_5 {
+    background: url(../images/home/businessStudies.svg)var(--ncc);
+}
+
+#subjects .subjectsContainer .subjectSection .h2_6 {
+    background: url(../images/home/economics.svg)var(--ncc);
+}
+
+#subjects .subjectsContainer .subjectSection h1::before,
+#subjects .subjectsContainer .subjectSection h2::before{
+    position: absolute;
+    content: "";
+    background: rgba(1, 9, 50, 0.74);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: 1rem;
+}
+
+#subjects .subjectsContainer .subjectSection h1::before{
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+
+#subjects .subjectsContainer .subjectSection h2>p{
+   color: var(--main-white);
+   position: relative;
+   z-index: 2;
+   font-size: 2.5rem;
+}
+
+/* subjects section css end */
+
+
+/* learning pack section css begin */
+
+#learningPack{
+    margin-top: 8rem;
+    background: var(--sec-bg);
+    padding: 4rem 6rem;
+    gap: 3.5rem;
+}
+
+#learningPack>h1{
+    display: none;
+}
+
+#learningPack>div{
+    gap: 3.5rem;
+}
+
+#learningPack .imageSection{
+    grid-gap: 3rem;
+    grid-template-columns: repeat(3,1fr);
+}
+
+#learningPack .imageSection h1,
+#learningPack .imageSection h2 {
+    /* background: var(--main-dark); */
+    border-radius: 1rem;
+}
+
+#learningPack .imageSection h1{
+    width: 60rem;
+    height: 36rem;
+    grid-area: 1/1/1/4;
+    background: url(../images/home/learningPackMain.svg)var(--ncc);
+}
+
+
+#learningPack .imageSection h1>p{
+    color: var(--main-white);
+    position: relative;
+    z-index: 2;
+}
+
+#learningPack .imageSection h1>p{
+    font-size: 11rem;
+}
+
+#learningPack .imageSection h2>p {
+    font-size: 2.2rem;
+}
+
+#learningPack .imageSection h2 {
+    height: 13rem;
+}
+
+
+#learningPack .imageSection h1::before,
+#learningPack .imageSection h2::before {
+    position: absolute;
+    content: "";
+    background: rgba(1, 9, 50, 0.74);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: 1rem;
+}
+
+#learningPack .textContentSection h2{
+    width: 100%;
+}
+/* learning pack section css end */
+

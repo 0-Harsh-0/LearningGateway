@@ -1,0 +1,143 @@
+/* about us section css begin */
+body{
+    overflow-x: hidden;
+}
+#aboutUs{
+    margin-top: 3rem;
+    gap: 3rem;
+    padding: 0 6rem;
+}
+
+#aboutUs>div>p{
+    font-size: 1.65rem;
+    text-align: center;
+    color: var(--main-dark);
+    line-height: 3.6rem;
+}
+
+#aboutUs .imageContainer{
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+    margin-top: 6rem;
+    margin-bottom: 14rem;
+}
+
+
+#aboutUs .imageContainer div {
+    gap: 2rem;
+    height: 100%;
+}
+
+#aboutUs .imageContainer div:first-child{
+    align-items: end;
+}
+
+#aboutUs .imageContainer figure img{
+    object-fit: cover;
+    max-width: 100%;
+}
+
+#aboutUs{
+    position: relative;
+    overflow: hidden;
+}
+
+#aboutUs::before{
+    content: "";
+    position: absolute;
+    width: 50rem;
+    height: 40rem;
+    border: 9rem solid transparent;
+    background: linear-gradient(141.78deg,rgba(1, 9, 50, 0.21) 50.1%, rgba(1, 9, 50, 0.28) 60.59%, rgba(1, 9, 50, 0.56) 77.97%) border-box;
+    border-right: none;
+    border-bottom-left-radius: 90%;
+    border-top: none;
+    top: 56rem;
+    right: 3rem;
+    transform: rotate(-18deg);
+    -webkit-mask:
+            /*4*/
+            linear-gradient(#fff 0 0) padding-box,
+            linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    /*5'*/
+    mask-composite: exclude;
+    /*5*/
+    z-index: -1;
+
+}
+
+/* about us section css end */
+
+
+/* what we do section css begin */
+#what_we_do{
+    padding: 0 6rem;
+    gap: 5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#what_we_do .division_1{
+    gap: 2rem;
+}
+
+#what_we_do .division_1>div:first-child,
+#what_we_do .division_1>div:last-child{
+    gap: 4rem;
+}
+
+#what_we_do .division_1>div:first-child div,
+#what_we_do .division_1>div:last-child div,
+#what_we_do .division_2 div{
+    gap: 2rem;
+    width: 100%;
+}
+
+
+#what_we_do .division_1 div:first-child div figure img,
+#what_we_do .division_1 div:last-child div figure img,
+#what_we_do .division_2 div figure img{
+    max-width: 3rem;
+    object-fit: contain;
+}
+
+#what_we_do .division_1 div:first-child div p,
+#what_we_do .division_1 div:last-child div p,
+#what_we_do .division_2 div p{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: start;
+}
+
+#what_we_do .division_1 .middle figure img{
+    max-width: 38rem;
+}
+
+#what_we_do .division_2 {
+    gap: 4rem;
+}
+
+#what_we_do::before {
+    content: "";
+    position: absolute;
+    width: 25rem;
+    height: 25rem;
+    border: 7rem solid transparent;
+    background: linear-gradient(-130.78deg, rgba(1, 9, 50, 0.21) 50.1%, rgba(1, 9, 50, 0.28) 60.59%, rgba(1, 9, 50, 0.56) 77.97%) border-box;
+    border-radius: 50%;
+    top: 68rem;
+    right: -26rem;
+    -webkit-mask:
+        /*4*/
+        linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    /*5'*/
+    mask-composite: exclude;
+    /*5*/
+    z-index: -1;
+
+}
+/* what we do section css end */

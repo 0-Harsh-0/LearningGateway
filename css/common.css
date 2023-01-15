@@ -1,0 +1,498 @@
+/* including fonts from googlefonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Patrick+Hand&family=Poppins:wght@300;400;600&display=swap');
+
+
+/* defining variable for colors */
+:root {
+    --nav-dark: rgba(1, 9, 50, 1);
+    --nav-light: rgba(8, 18, 71, 0.7);
+    --main-dark: rgba(1, 9, 50, 1);
+    --main-light: rgba(1, 9, 50, 0.85);
+    --main-white: rgba(255, 255, 255, 1);
+    --sec-bg: rgba(1, 9, 50, 0.03);
+    --ncc: no-repeat center center;
+}
+
+/* resetting css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box!important;
+    font-style: normal;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body{
+    background: var(--main-white);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 5rem;
+    margin-bottom: 11rem;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* navbar css begin*/
+
+.navbar {
+    background: var(--main-white);
+    padding: 2rem 5rem;
+    width: 100%;
+}
+
+.navbar>ul {
+    display: flex;
+}
+
+.navbar>ul>figure>img {
+    max-width: 17rem;
+    object-fit: cover;
+    position: relative;
+    left: -3rem;
+}
+
+
+.navbar>ul #navigation{
+    width: 100%;
+    gap: 2rem;
+}
+
+.navbar>ul #navigation .back {
+    display: none;
+}
+
+.links {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--nav-light);
+    transition: all .3s ease-in-out;
+    padding: .1rem;
+}
+
+.links:hover {
+    color: var(--nav-dark);
+    font-weight: 600;
+}
+
+.active{
+    color: var(--nav-dark);
+    font-weight: 600;
+}
+
+.links li {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.links li::after {
+    content: attr(data-text);
+    height: 0;
+    visibility: hidden;
+    font-weight: 600;
+}
+
+.navbar>ul>a {
+    width: 20%;
+}
+
+.navbar .verticalBar {
+    background: var(--nav-light);
+    height: 75%;
+    width: .23rem;
+    margin-right: 1rem;
+}
+
+.navbar>ul .active_button:hover,
+.navbar>ul .button {
+    border: 1px solid var(--nav-light);
+    padding: 1rem 2rem;
+    border-radius: .8rem;
+    transition: .4s ease-in;
+}
+
+.active_button,
+.navbar>ul .button:hover {
+    color: var(--main-white);
+    background: var(--nav-dark);
+    font-weight: 400;
+}
+
+.navbar>ul .active_button{
+    transition: .4s ease-in;
+}
+
+.navbar>ul .active_button:hover{
+    background-color: transparent;
+    color: var(--nav-light);
+}
+
+/* navbar css end*/
+
+/* footer css begin */
+footer {
+    margin-top: auto;
+    background: #F2F2F4;
+    padding: 3rem 6rem;
+    padding-bottom: 1rem;
+}
+
+footer div nav ul{
+    grid-template-columns: 3fr 1fr;
+}
+
+footer div nav ul>div:last-child{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+footer div nav ul div:first-child {
+    width: 100%;
+    gap: 2rem;
+}
+
+
+footer div nav ul div:nth-child(2) {
+   gap: 4rem;
+}
+
+footer div nav .links li {
+    font-size: 1.4rem;
+}
+
+footer div nav .links figure img {
+    object-fit: contain;
+}
+
+footer>div>div>figure {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+footer>div div>figure>img {
+    max-width: 17rem;
+    object-fit: cover;
+}
+
+footer>div>div {
+    gap: 3rem;
+}
+
+footer>div>div li {
+    font-size: 1.2rem;
+}
+
+
+/* footer css end */
+
+/* common section css begin */
+
+.textContentSection {
+    height: 100%;
+    gap: 5rem;
+}
+
+.learnings>h2,
+.textContentSection h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    width: 50%;
+}
+
+.learnings>h2{
+    display: none;
+}
+
+.textContentSection p {
+    font-family: 'inter';
+    font-size: 2.1rem;
+    line-height: 3.6rem;
+}
+
+#hero,
+#subjects .subjectsContainer .subjectSection h1,
+#subjects .subjectsContainer .subjectSection .english,
+#subjects .subjectsContainer .subjectSection .engLiter,
+#subjects .subjectsContainer .subjectSection .vr,
+#subjects .subjectsContainer .subjectSection .nvr,
+#subjects .subjectsContainer .subjectSection .math,
+#subjects .subjectsContainer .subjectSection .engLang,
+#subjects .subjectsContainer .subjectSection .science,
+#subjects .subjectsContainer .subjectSection .h2_5,
+#subjects .subjectsContainer .subjectSection .h2_6,
+#learningPack .imageSection h1,
+#buyLearningPack .imageSection h2,
+.imageSection .pack_11,
+.imageSection .primary,
+.imageSection .year7_9,
+.imageSection .gcse {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.imageSection .pack_11 {
+    background: url(../images/home/learningPackMain.svg)var(--ncc);
+}
+
+.imageSection .primary {
+    background: url(../images/home/learningPack1.svg)var(--ncc);
+}
+
+.imageSection .year7_9 {
+    background: url(../images/home/learningPack2.svg)var(--ncc);
+}
+
+.imageSection .gcse {
+    background: url(../images/home/learningPack3.svg)var(--ncc);
+}
+
+.imageSection h2::before {
+    position: absolute;
+    content: "";
+    background: rgba(1, 9, 50, 0.74);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: 1rem;
+}
+
+.imageSection h2>p {
+    color: var(--main-white);
+    position: relative;
+    z-index: 2;
+}
+
+.imageSection h2>p {
+    font-size: 2.2rem;
+}
+
+.imageSection h2 {
+    height: 13rem;
+    border-radius: 1rem;
+}
+/* common section css end */
+
+
+/* mostly used classes for position setting begin */
+.relative {
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.justifyCenter {
+    justify-content: center;
+}
+
+.justifyStart {
+    justify-content: start;
+}
+
+.justifyEnd {
+    justify-content: end;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.alignStart {
+    align-items: start;
+}
+
+.alignEnd {
+    align-items: end;
+}
+
+
+.grid {
+    display: grid;
+}
+
+.grid-4Column {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* mostly used classes for position setting end */
+
+
+
+/* classes of font family begin */
+.poppins {
+    font-family: 'Poppins';
+}
+
+.patrickHand {
+    font-family: 'Patrick Hand';
+}
+
+.inter {
+    font-family: 'Inter';
+}
+
+/* classes of font family end */
+
+.btn {
+    border-radius: 3.1rem;
+    padding: 1.5rem 3.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_1,
+.btn_2,
+.btn_2_2,
+svg>path {
+    transition: .5s ease-in-out;
+}
+
+.btn_1 {
+    border: 1px solid var(--main-white);
+    background: var(--main-white);
+    color: var(--main-dark);
+}
+
+.btn_1:hover {
+    background: transparent;
+    border: 1px solid var(--main-white);
+    color: white;
+    transition: .5s ease-in-out;
+}
+
+.btn_1:hover>svg>path {
+    fill: white;
+}
+
+
+.btn_2 {
+    border: 1px solid var(--main-white);
+    background: transparent;
+    color: var(--main-white);
+}
+
+.btn_2:hover {
+    background: var(--main-white);
+    color: var(--main-dark);
+    transition: .5s ease-in-out;
+}
+
+.btn_2_2 {
+    border: 1px solid var(--main-dark);
+    background: var(--main-dark);
+    color: var(--main-white);
+}
+
+.btn_2_2:hover {
+    border-color: var(--main-dark);
+    background: transparent;
+    color: var(--main-dark);
+}
+
+.btn_2_2:hover>svg>path {
+    fill: var(--main-dark);
+}
+
+.icon {
+    font-size: 2.5rem;
+}
+
+.heading {
+    font-size: 4.5rem;
+    font-size: 400;
+    line-height: 6.8rem;
+    color: var(--main-dark);
+    text-align: center;
+}
+
+.paragraph {
+    font-size: 2.3rem;
+    font-weight: 500;
+    line-height: 180%;
+    color: var(--main-light);
+    text-align: center;
+    font-family: 'inter';
+}
+
+.longDash {
+    height: .5rem;
+    width: 6rem;
+    background: var(--main-dark);
+    border-radius: 1rem;
+}
+
+.hamburgerContainer{
+    height: 100%;
+    display: none;
+}
+
+.hamburgerContainer .hamburger{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: .6rem;
+    background: rgba(1, 9, 50, 0.05);
+    padding: 1rem;
+    border-radius: .5rem;
+    transition: .5s all;
+}
+
+.hamburger div{
+    background: var(--main-dark);
+    height: .36rem;
+    width: 2.6rem;
+    border-radius: .5rem;
+    transition: .3s all;
+}
+
+.hamburgerContainer:active .hamburger{
+    background: var(--main-dark);
+}
+
+.hamburgerContainer:active .hamburger div{
+    background: var(--main-white);
+}
