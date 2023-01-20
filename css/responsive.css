@@ -782,6 +782,46 @@
     .mainContainer .videoTitleContainer .videoTitle figure img {
         max-width: 4rem;
     }
+
+    @keyframes showasidebar {
+        0% {
+            left: -40rem;
+        }
+
+        100% {
+            left: 0;
+        }
+    }
+
+    @keyframes hideasidebar {
+        0% {
+            left: 0;
+        }
+
+        100% {
+            left: -40rem;
+        }
+    }
+
+    @keyframes showlessonsbar {
+        0% {
+            right: -48rem;
+        }
+
+        100% {
+            right: 0;
+        }
+    }
+
+    @keyframes hidelessonsbar {
+        0% {
+            right: 0;
+        }
+
+        100% {
+            right: -48rem;
+        }
+    }
     
     /* learning resources css end */
 
