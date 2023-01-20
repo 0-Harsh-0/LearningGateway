@@ -409,14 +409,18 @@
     width: 100%;
 }
 
-#subjects .subjectsContainer .subjectSection>div .h2_5{
+#subjects .subjectsContainer .subjectSection>div a:nth-child(5){
     grid-area: 2/2/2/3;
 }
 
-#subjects .subjectsContainer .subjectSection>div .h2_6{
+#subjects .subjectsContainer .subjectSection>div a:nth-child(6){
     grid-area: 2/3/2/4;
 }
 
+
+#subjects .subjectsContainer .subjectSection a{
+    width: 100%;
+}
 
 #subjects .subjectsContainer .subjectSection h1,
 #subjects .subjectsContainer .subjectSection h2{
@@ -528,10 +532,15 @@
     border-radius: 1rem;
 }
 
+#learningPack .imageSection a:first-child{
+    grid-area: 1/1/1/4;
+    width: 60rem;
+}
+
+
 #learningPack .imageSection h1{
     width: 60rem;
     height: 36rem;
-    grid-area: 1/1/1/4;
     background: url(../images/home/learningPackMain.svg)var(--ncc);
 }
 

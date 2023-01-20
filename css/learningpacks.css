@@ -1,0 +1,121 @@
+main{
+    margin-bottom: 0!important;
+    gap: 1rem!important;
+}
+
+main>.buttons {
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    display: none;
+}
+
+
+.mainContainer{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer .videoTitleContainer{
+    border: .2rem solid var(--main-dark);
+    /* width: 100%; */
+    height: 40rem;
+    width: 27rem;
+    padding: 1rem;
+    gap: 2rem;
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    /* for Firefox */
+    overflow-y: scroll;
+}
+
+.mainContainer .videoTitleContainer::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+}
+
+.mainContainer .videoTitleContainer .videoTitle{
+    font-size: 1.4rem;
+    gap: .5rem;
+    height: 4rem;
+    cursor: pointer;
+    font-family: 'Patrick Hand';
+    grid-template-columns: 1fr 5fr;
+    width: 100%;
+}
+
+.mainContainer .videoTitleContainer .videoTitle p{
+   width: 100%;
+}
+
+.mainContainer .videoTitleContainer .videoTitle span{
+    background: var(--main-dark);
+    color: var(--main-white);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-weight: 600;
+    justify-self: center;
+}
+.mainContainer .videoTitleContainer .videoTitle figure{
+    display: none;
+    width: 3rem;
+    height: 3rem;
+    justify-self: center;
+}
+
+.mainContainer .videoTitleContainer .videoTitle figure img{
+    max-width: 3rem;
+    object-fit: contain;
+}
+
+.mainContainer .videoTitleContainer .videoTitle.play span{    
+    display: none;
+}
+
+.mainContainer .videoTitleContainer .videoTitle.play figure{    
+    display: flex;
+}
+
+.mainContainer .video{
+    background-color: var(--main-dark);
+    width: 70rem;
+    height: 40rem;
+    border: .2rem solid var(--main-dark);
+    justify-self: center;
+}
+
+.mainContainer .video h1{
+    color: var(--main-white);
+    width: 100%;
+    text-align: center;
+}
+
+.mainContainer .video p{
+    color: var(--main-white);
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.mainContainer .video a{
+    color: var(--main-white);
+    font-size: 1.5rem;
+    font-family: 'Patrick Hand';
+    border-bottom: .1rem solid white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.mainContainer .video iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+    object-fit: contain;
+}

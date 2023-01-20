@@ -47,6 +47,29 @@
     #stories>div{
         border-radius: 0;
     }
+    /* Learning Resources css begin */
+    aside{
+        display: none;
+        position: absolute;
+        left: -25rem;
+        z-index: 1000;
+        top: 1rem;
+    }
+    aside>nav{
+        border: .2rem solid white;
+    }
+
+    .mainContainer{
+        padding: 1rem;
+        position: relative;
+    }
+
+    main>.buttons {
+        display: flex;
+    }
+    main>.buttons button:last-child{
+        display: none;
+    }
 }
 
 
@@ -98,7 +121,7 @@
         background: linear-gradient(180deg, #000000 0%, rgba(8, 18, 71, 0.7) 100%);
         flex-direction: column;
         position: fixed;
-        z-index: 100;
+        z-index: 10000;
         top: 0;
         bottom: 0;
         width: 33rem;
@@ -275,11 +298,16 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    #subjects .subjectsContainer .subjectSection>div .h2_5,
-    #subjects .subjectsContainer .subjectSection>div .h2_6{
+    #subjects .subjectsContainer .subjectSection>div a:nth-child(5),
+    #subjects .subjectsContainer .subjectSection>div a:nth-child(6){
         grid-area: initial;
     }
 
+    
+    #learningPack .imageSection a:first-child {
+        grid-area: 1/1/1/4;
+        width: 100%;
+    }
    
 
     #learningPack>h1 {
@@ -378,6 +406,7 @@
         grid-template-columns: 1fr 1fr;
     }
 
+
     /* learning resources css end */
 
     /** contact us css begin **/
@@ -434,6 +463,43 @@
         right: -12rem;
     }
     /* About us css begin */
+}
+
+/* * 985 * */
+@media only screen and (max-width: 985px){
+    main>.buttons button:last-child {
+        display: block;
+    }
+    .mainContainer{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .mainContainer .video{
+        width: 100%;
+        height: 50vw;
+    }
+
+    .mainContainer .videoTitleContainer{
+        display: none;
+        position: absolute;
+        right: -35rem;
+        background: white;
+        width: 30rem;
+        z-index: 1000;
+        top: 1.8rem;
+        background: linear-gradient(180deg, #000000 0%, rgba(8, 18, 71, .9) 100%);
+        color: white;
+        border: .2rem solid white;
+        font-weight: bold;
+    }
+
+    .mainContainer .videoTitleContainer .videoTitle span{
+        background-color: white;
+        color: var(--main-dark);
+    }
 }
 
 
@@ -537,6 +603,14 @@
     }
 }
 
+/* * 800 * */
+@media only screen and (max-width: 800px) {
+    /* Learning Resources Css begin */
+    .mainContainer .video {
+        height: 55vw;
+    }
+    /* Learning Resources Css end */
+}
 
 
 /* * 650 * */
@@ -562,6 +636,12 @@
         top: 82rem;
         right: -10rem;
     }
+
+    /* Learning resources css begin */
+    .mainContainer .video {
+        height: 56vw;
+    }
+    /* Learning resources css end */
 }
 
 
@@ -653,6 +733,54 @@
     
     #learning_pack figure img {
         max-width: 40rem;
+    }
+
+    aside #leftNavigation{
+        height: 49rem;
+        width: 40rem;
+    }
+
+    .navigators p{
+        font-size: 3rem;
+        height: 5rem;
+        width: 25rem;
+    }
+
+    .dropdown figure img {
+        max-width: 5rem;
+    }
+
+    .dropdownContent{
+        padding-left: 3rem;
+    }
+
+    .dropdownContent .dropDownList .guide li {
+        font-size: 2.5rem;
+    }
+
+    .mainContainer .videoTitleContainer{
+        width: 90%;
+        height: 49rem;     
+        gap: 3rem ;
+    }
+
+    .mainContainer .videoTitleContainer .videoTitle p{
+        font-size: 2rem;
+    }
+
+    .mainContainer .videoTitleContainer .videoTitle span{
+        font-size: 2rem;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .mainContainer .videoTitleContainer .videoTitle figure {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .mainContainer .videoTitleContainer .videoTitle figure img {
+        max-width: 4rem;
     }
     
     /* learning resources css end */
