@@ -202,7 +202,7 @@ navigationButton.addEventListener('click',()=>{
         asideTag.classList.add('hideAsideBar')
         setTimeout(() => {
             asideTag.style.display = 'none'
-        }, 500);
+        }, 900);
         lessonsButton.disabled = false
         clickCount = 0
     }
@@ -224,7 +224,7 @@ lessonsButton.addEventListener('click', () => {
         lessonsBar.classList.add('hideLessonsBar')
         setTimeout(() => {
             lessonsBar.style.display = 'none'
-        }, 500);
+        }, 900);
         navigationButton.disabled = false
         clickCount2 = 0
     }
